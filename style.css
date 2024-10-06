@@ -1,3 +1,11 @@
+:root {
+    --cobalt-blue: #1446a0ff;
+    --razzmatazz: #db3069ff;
+    --naples-yellow: #f5d547ff;
+    --beige: #ebebd3ff;
+    --onyx: #3c3c3bff;
+}
+
 html {
     font-size: 16pt;
     box-sizing: border-box;
@@ -6,6 +14,8 @@ html {
 
 body {
     width: 100%;
+    background-color: var(--beige);
+    color: var(--onyx)
 }
 
 header {
@@ -28,6 +38,14 @@ nav ul li {
     margin: 1rem;
 }
 
+a:hover {
+    color: var(--cobalt-blue)
+}
+
+a:visited {
+    color: var(--razzmatazz)
+}
+
 main {
     max-width: 100%;
     display: flex;
@@ -39,11 +57,11 @@ main {
 .area {
     min-width: 20rem;
     max-width: 25rem;
-    border: .5rem solid red;
     margin: 1rem;
     border-radius: 2rem;
     padding: 1rem;
-
+    background-color: var(--razzmatazz);
+    color: var(--beige)
 }
 
 h2 {
@@ -53,11 +71,19 @@ h2 {
 .temperature {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.temperature-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
 }
 
 .setpoint {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .icon {
