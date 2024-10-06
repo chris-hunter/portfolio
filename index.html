@@ -1,170 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Old Hall Heating</title>
-        <script type="text/javascript" src="./main.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1>Old Hall Heating</h1>
-            <nav>
-                <ul>
-                    <li><a href="#kitchen">Kitchen</a></li>
-                    <li><a href="#fron-hall-porch">Front Hall and Porch</a></li>
-                    <li><a href="#rear-hall">Rear Hall</a></li>
-                    <li><a href="#living-room">Living Room</a></li>
-                    <li><a href="#play-room">Play Room</a></li>
-                    <li><a href="#dining-room">Dining Room</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div id="kitchen" class="area">
-                <h2>Kitchen</h2>
-                <hr>
-                <div class="temperature">
-                    <div class="icon"><img src="./resources/thermometer_beige.svg"/></div>
-                    <div class="temperature-text"><p>Current Temperature</p></div>
-                    <div class="temperature-value"><p>20°C</p></div>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Old Hall Heating</title>
+    <script type="text/javascript" src="./main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Old Hall Heating</h1>
+        <nav>
+            <ul>
+                <li><a href="#kitchen">Kitchen</a></li>
+                <li><a href="#fron-hall-porch">Front Hall and Porch</a></li>
+                <li><a href="#rear-hall">Rear Hall</a></li>
+                <li><a href="#living-room">Living Room</a></li>
+                <li><a href="#play-room">Play Room</a></li>
+                <li><a href="#dining-room">Dining Room</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="update.html" method="GET"></form>
+    <main>
+        <div id="kitchen" class="area">
+            <h2>Kitchen</h2>
+            <hr>
+            <div class="temperature">
+                <div class="icon"><img src="./resources/thermometer_beige.svg" /></div>
+                <div class="temperature-text">
+                    <p>Current Temperature</p>
                 </div>
-                <div class="setpoint">
-                    <div class="icon"><img src="./resources/gauge_beige.svg"/></div>
-                    <div class="setpoint-text"><p>Current Setpoint</p></div>
-                    <div class="setpoint-value"><p>20°C</p></div>
+                <div class="temperature-value">
+                    <p>20°C</p>
                 </div>
-                <hr>
-                <form action="update.html" method="GET"></form>
-                    <div class="new-setpoint">
-                        <label for="kitchen-new-setpoint">Enter new setpoint: </label>
-                        <input id="kitchen-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5" name="kitchen-new-setpoint"/>
-                    </div>
-                    <div class="new-setpoint-display">
-                        <div><p><span class="new-setpoint-number">20</span><span>°C</span></p></div>
-                    </div>
-                </form>
             </div>
-            <div id="front-hall-porch" class="area">
-                <h2>Front Hall and Porch</h2>
-                <hr>
-                <div class="temperature">
-                    <div class="icon"><img src="./resources/thermometer_beige.svg"/></div>
-                    <div class="temperature-text"><p>Current Temperature</p></div>
-                    <div class="temperature-value"><p>20°C</p></div>
+            <div class="setpoint">
+                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
+                <div class="setpoint-text">
+                    <p>Current Setpoint</p>
                 </div>
-                <div class="setpoint">
-                    <div class="icon"><img src="./resources/gauge_beige.svg"/></div>
-                    <div class="setpoint-text"><p>Current Setpoint</p></div>
-                    <div class="setpoint-value"><p>20°C</p></div>
+                <div class="setpoint-value">
+                    <p>20°C</p>
                 </div>
-                <hr>
-                <form action="update.html" method="GET"></form>
-                    <div class="new-setpoint">
-                        <label for="front-hall-porch-new-setpoint">Enter new setpoint: </label>
-                        <input id="front-hall-porch-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5" name="front-hall-porch-new-setpoint"/>
-                    </div>
-                    <div class="new-setpoint-display">
-                        <div><p><span class="new-setpoint-number">20</span><span>°C</span></p></div>
-                    </div>
-                </form>
             </div>
-            <div id="rear-hall" class="area">
-                <h2>Rear Hall</h2>
-                <hr>
-                <div class="temperature">
-                    <div class="icon"><img src="./resources/thermometer_beige.svg"/></div>
-                    <div class="temperature-text"><p>Current Temperature</p></div>
-                    <div class="temperature-value"><p>20°C</p></div>
-                </div>
-                <div class="setpoint">
-                    <div class="icon"><img src="./resources/gauge_beige.svg"/></div>
-                    <div class="setpoint-text"><p>Current Setpoint</p></div>
-                    <div class="setpoint-value"><p>20°C</p></div>
-                </div>
-                <hr>
-                <form action="update.html" method="GET"></form>
-                    <div class="new-setpoint">
-                        <label for="rear-hall-new-setpoint">Enter new setpoint: </label>
-                        <input id="rear-hall-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5" name="rear-hall-new-setpoint"/>
-                    </div>
-                    <div class="new-setpoint-display">
-                        <div><p><span class="new-setpoint-number">20</span><span>°C</span></p></div>
-                    </div>
-                </form>
+            <hr>
+            <div class="new-setpoint">
+                <label for="kitchen-new-setpoint">Enter new setpoint: </label>
+                <input id="kitchen-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5"
+                    name="kitchen-new-setpoint" />
             </div>
-            <div id="living-room" class="area">
-                <h2>Living Room</h2>
-                <hr>
-                <div class="temperature">
-                    <div class="icon"><img src="./resources/thermometer_beige.svg"/></div>
-                    <div><p class="temperature-text">Current Temperature</p></div>
-                    <div><p class="temperature-value">20°C</p></div>
+            <div class="new-setpoint-display">
+                <div>
+                    <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
-                <div class="setpoint">
-                    <div class="icon"><img src="./resources/gauge_beige.svg"/></div>
-                    <div class="setpoint-text"><p>Current Setpoint</p></div>
-                    <div class="setpoint-value"><p>20°C</p></div>
-                </div>
-                <hr>
-                <form action="update.html" method="GET"></form>
-                    <div class="new-setpoint">
-                        <label for="living-room-new-setpoint">Enter new setpoint: </label>
-                        <input id="living-room-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5" name="living-room-new-setpoint"/>
-                    </div>
-                    <div class="new-setpoint-display">
-                        <div><p><span class="new-setpoint-number">20</span><span>°C</span></p></div>
-                    </div>
-                </form>
             </div>
-            <div id="play-room" class="area">
-                <h2>Play Room</h2>
-                <hr>
-                <div class="temperature">
-                    <div class="icon"><img src="./resources/thermometer_beige.svg"/></div>
-                    <div class="temperature-text"><p>Current Temperature</p></div>
-                    <div class="temperature-value"><p>20°C</p></div>
+        </div>
+        <div id="front-hall-porch" class="area">
+            <h2>Front Hall and Porch</h2>
+            <hr>
+            <div class="temperature">
+                <div class="icon"><img src="./resources/thermometer_beige.svg" /></div>
+                <div class="temperature-text">
+                    <p>Current Temperature</p>
                 </div>
-                <div class="setpoint">
-                    <div class="icon"><img src="./resources/gauge_beige.svg"/></div>
-                    <div class="setpoint-text"><p>Current Setpoint</p></div>
-                    <div class="setpoint-value"><p>20°C</p></div>
+                <div class="temperature-value">
+                    <p>20°C</p>
                 </div>
-                <hr>
-                <form action="update.html" method="GET"></form>
-                    <div class="new-setpoint">
-                        <label for="play-room-new-setpoint">Enter new setpoint: </label>
-                        <input id="play-room-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5" name="play-room-new-setpoint"/>
-                    </div>
-                    <div class="new-setpoint-display">
-                        <div><p><span class="new-setpoint-number">20</span><span>°C</span></p></div>
-                    </div>
-                </form>
             </div>
-            <div id="dining-room" class="area">
-                <h2>Dining Room</h2>
-                <hr>
-                <div class="temperature">
-                    <div class="icon"><img src="./resources/thermometer_beige.svg"/></div>
-                    <div class="temperature-text"><p>Current Temperature</p></div>
-                    <div class="temperature-value"><p>20°C</p></div>
+            <div class="setpoint">
+                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
+                <div class="setpoint-text">
+                    <p>Current Setpoint</p>
                 </div>
-                <div class="setpoint">
-                    <div class="icon"><img src="./resources/gauge_beige.svg"/></div>
-                    <div class="setpoint-text"><p>Current Setpoint</p></div>
-                    <div class="setpoint-value"><p>20°C</p></div>
+                <div class="setpoint-value">
+                    <p>20°C</p>
                 </div>
-                <hr>
-                <form action="update.html" method="GET"></form>
-                    <div class="new-setpoint">
-                        <label for="dining-room-new-setpoint">Enter new setpoint: </label>
-                        <input id="dining-room-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5" name="dining-room-new-setpoint"/>
-                    </div>
-                    <div class="new-setpoint-display">
-                        <div><p><span class="new-setpoint-number">20</span><span>°C</span></p></div>
-                    </div>
-                </form>
             </div>
-        </main>
-    </body>
+            <hr>
+            <div class="new-setpoint">
+                <label for="front-hall-porch-new-setpoint">Enter new setpoint: </label>
+                <input id="front-hall-porch-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21"
+                    step=".5" name="front-hall-porch-new-setpoint" />
+            </div>
+            <div class="new-setpoint-display">
+                <div>
+                    <p><span class="new-setpoint-number">20</span><span>°C</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="rear-hall" class="area">
+            <h2>Rear Hall</h2>
+            <hr>
+            <div class="temperature">
+                <div class="icon"><img src="./resources/thermometer_beige.svg" /></div>
+                <div class="temperature-text">
+                    <p>Current Temperature</p>
+                </div>
+                <div class="temperature-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <div class="setpoint">
+                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
+                <div class="setpoint-text">
+                    <p>Current Setpoint</p>
+                </div>
+                <div class="setpoint-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <hr>
+            <div class="new-setpoint">
+                <label for="rear-hall-new-setpoint">Enter new setpoint: </label>
+                <input id="rear-hall-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5"
+                    name="rear-hall-new-setpoint" />
+            </div>
+            <div class="new-setpoint-display">
+                <div>
+                    <p><span class="new-setpoint-number">20</span><span>°C</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="living-room" class="area">
+            <h2>Living Room</h2>
+            <hr>
+            <div class="temperature">
+                <div class="icon"><img src="./resources/thermometer_beige.svg" /></div>
+                <div>
+                    <p class="temperature-text">Current Temperature</p>
+                </div>
+                <div>
+                    <p class="temperature-value">20°C</p>
+                </div>
+            </div>
+            <div class="setpoint">
+                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
+                <div class="setpoint-text">
+                    <p>Current Setpoint</p>
+                </div>
+                <div class="setpoint-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <hr>
+            <div class="new-setpoint">
+                <label for="living-room-new-setpoint">Enter new setpoint: </label>
+                <input id="living-room-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5"
+                    name="living-room-new-setpoint" />
+            </div>
+            <div class="new-setpoint-display">
+                <div>
+                    <p><span class="new-setpoint-number">20</span><span>°C</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="play-room" class="area">
+            <h2>Play Room</h2>
+            <hr>
+            <div class="temperature">
+                <div class="icon"><img src="./resources/thermometer_beige.svg" /></div>
+                <div class="temperature-text">
+                    <p>Current Temperature</p>
+                </div>
+                <div class="temperature-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <div class="setpoint">
+                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
+                <div class="setpoint-text">
+                    <p>Current Setpoint</p>
+                </div>
+                <div class="setpoint-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <hr>
+            <div class="new-setpoint">
+                <label for="play-room-new-setpoint">Enter new setpoint: </label>
+                <input id="play-room-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5"
+                    name="play-room-new-setpoint" />
+            </div>
+            <div class="new-setpoint-display">
+                <div>
+                    <p><span class="new-setpoint-number">20</span><span>°C</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="dining-room" class="area">
+            <h2>Dining Room</h2>
+            <hr>
+            <div class="temperature">
+                <div class="icon"><img src="./resources/thermometer_beige.svg" /></div>
+                <div class="temperature-text">
+                    <p>Current Temperature</p>
+                </div>
+                <div class="temperature-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <div class="setpoint">
+                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
+                <div class="setpoint-text">
+                    <p>Current Setpoint</p>
+                </div>
+                <div class="setpoint-value">
+                    <p>20°C</p>
+                </div>
+            </div>
+            <hr>
+            <div class="new-setpoint">
+                <label for="dining-room-new-setpoint">Enter new setpoint: </label>
+                <input id="dining-room-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5"
+                    name="dining-room-new-setpoint" />
+            </div>
+            <div class="new-setpoint-display">
+                <div>
+                    <p><span class="new-setpoint-number">20</span><span>°C</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    </form>
+</body>
+
 </html>
