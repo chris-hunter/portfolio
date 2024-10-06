@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <form action="update.html" method="GET"></form>
+    <form action="index.html" method="GET"></form>
     <main>
         <div id="kitchen" class="area">
             <h2>Kitchen</h2>
@@ -42,19 +42,23 @@
                     <p>Current Setpoint</p>
                 </div>
                 <div class="setpoint-value">
-                    <p>20°C</p>
+                    <p><span id="kitchen-setpoint-value">20</span><span>°C</span></p>
                 </div>
             </div>
             <hr>
             <div class="new-setpoint">
                 <label for="kitchen-new-setpoint">Enter new setpoint: </label>
-                <input id="kitchen-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step=".5"
+                <input id="kitchen-new-setpoint" class="new-setpoint-input" type="range" min="5" max="21" step="0.5"
                     name="kitchen-new-setpoint" />
             </div>
             <div class="new-setpoint-display">
                 <div>
                     <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
+            </div>
+            <hr>
+            <div class="submit">
+                <input type="submit" value="Update">
             </div>
         </div>
         <div id="front-hall-porch" class="area">
@@ -89,6 +93,10 @@
                     <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
             </div>
+            <hr>
+            <div class="submit">
+                <input type="submit" value="Update">
+            </div>
         </div>
         <div id="rear-hall" class="area">
             <h2>Rear Hall</h2>
@@ -121,6 +129,10 @@
                 <div>
                     <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
+            </div>
+            <hr>
+            <div class="submit">
+                <input type="submit" value="Update">
             </div>
         </div>
         <div id="living-room" class="area">
@@ -155,6 +167,10 @@
                     <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
             </div>
+            <hr>
+            <div class="submit">
+                <input type="submit" value="Update">
+            </div>
         </div>
         <div id="play-room" class="area">
             <h2>Play Room</h2>
@@ -188,6 +204,10 @@
                     <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
             </div>
+            <hr>
+            <div class="submit">
+                <input type="submit" value="Update">
+            </div>
         </div>
         <div id="dining-room" class="area">
             <h2>Dining Room</h2>
@@ -200,11 +220,6 @@
                 <div class="temperature-value">
                     <p>20°C</p>
                 </div>
-            </div>
-            <div class="setpoint">
-                <div class="icon"><img src="./resources/gauge_beige.svg" /></div>
-                <div class="setpoint-text">
-                    <p>Current Setpoint</p>
                 </div>
                 <div class="setpoint-value">
                     <p>20°C</p>
@@ -220,6 +235,10 @@
                 <div>
                     <p><span class="new-setpoint-number">20</span><span>°C</span></p>
                 </div>
+            </div>
+            <hr>
+            <div class="submit">
+                <input type="submit" value="Update">
             </div>
         </div>
     </main>

@@ -25,6 +25,7 @@ header {
 h1 {
     margin: auto;
     text-align: center;
+    color: var(--cobalt-blue)
 }
 
 nav ul {
@@ -100,4 +101,14 @@ h2 {
 .new-setpoint-display {
     display: flex;
     justify-content: right;
+}
+
+.new-setpoint-display div p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
 }
