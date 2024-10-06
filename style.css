@@ -1,14 +1,11 @@
 html {
     font-size: 16pt;
+    box-sizing: border-box;
     
 }
 
 body {
-    box-sizing: border-box;
-}
-
-main {
-    width: 100%;  
+    width: 100%;
 }
 
 header {
@@ -23,6 +20,7 @@ h1 {
 nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -31,15 +29,35 @@ nav ul li {
 }
 
 main {
-    display: grid;
+    max-width: 100%;
+    display: flex;
     padding: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .area {
     min-width: 20rem;
-    max-width: 30rem;
+    max-width: 25rem;
     border: .5rem solid red;
+    margin: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
 
+}
+
+h2 {
+    text-align: center;
+}
+
+.temperature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setpoint {
+    display: flex;
+    justify-content: space-between;
 }
 
 .icon {
