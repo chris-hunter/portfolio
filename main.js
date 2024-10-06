@@ -1,7 +1,9 @@
-const kitchenNewSetpoint = document.querySelector("#kitchen-new-setpoint");
-const kitchenNewSetpointDisplay = document.querySelector("#kitchen-new-setpoint-number");
+const newSetpoints = document.getElementsByClassName("new-setpoint-input");
+const newSetpointDisplays = document.getElementsByClassName("new-setpoint-number");
 
-kitchenNewSetpointDisplay.textContent = kitchenNewSetpoint.value;
-kitchenNewSetpoint.addEventListener("change", (event) => {
-    kitchenNewSetpointDisplay.textContent = event.target.value;
-});
+for (let i = 0; i < newSetpoints.length; i++) {
+    newSetpointDisplays[i].textContent = newSetpoints[i].value;
+    newSetpoints[i].addEventListener("change", (event) => {
+        newSetpointDisplays[i].textContent = event.target.value;
+    });
+};
