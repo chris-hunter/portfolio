@@ -3,6 +3,46 @@ html {
     
 }
 
-main {
+body {
+    box-sizing: border-box;
+}
 
+main {
+    width: 100%;  
+}
+
+header {
+    width: auto;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+main {
+    display: grid;
+    padding: 2rem;
+}
+
+.area {
+    min-width: 20rem;
+    max-width: 30rem;
+    border: .5rem solid red;
+
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
 }
