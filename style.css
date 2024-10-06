@@ -52,6 +52,11 @@ main {
     padding: 2rem;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-image: linear-gradient(hsla(60, 37%, 87%, .7), hsla(60, 37%, 87%, .5)), url('./resources/jardin.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .area {
@@ -74,12 +79,6 @@ h2 {
     align-items: center;
 }
 
-.temperature-icon {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-}
-
 .setpoint {
     display: flex;
     justify-content: space-between;
@@ -89,4 +88,16 @@ h2 {
 .icon {
     width: 2rem;
     height: 2rem;
+}
+
+.new-setpoint {
+    padding-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-setpoint-display {
+    display: flex;
+    justify-content: right;
 }

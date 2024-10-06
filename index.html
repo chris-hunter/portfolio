@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <title>Old Hall Heating</title>
+        <script type="text/javascript" src="./main.js" defer></script>
     </head>
     <body>
         <header>
@@ -33,6 +34,16 @@
                     <div class="setpoint-text"><p>Current Setpoint</p></div>
                     <div class="setpoint-value"><p>20°C</p></div>
                 </div>
+                <hr>
+                <form action="update.html" method="GET"></form>
+                    <div class="new-setpoint">
+                        <label for="kitchen-new-setpoint">Enter new setpoint: </label>
+                        <input id="kitchen-new-setpoint" type="range" min="5" max="21" step=".5" name="kitchen-new-setpoint"/>
+                    </div>
+                    <div class="new-setpoint-display">
+                        <div class="new-setpoint-display-number"><p><span id="kitchen-new-setpoint-number">20</span><span>°C</span></p></div>
+                    </div>
+                </form>
             </div>
             <div id="front-hall-porch" class="area">
                 <h2>Front Hall and Porch</h2>
@@ -47,6 +58,13 @@
                     <div class="setpoint-text"><p>Current Setpoint</p></div>
                     <div class="setpoint-value"><p>20°C</p></div>
                 </div>
+                <hr>
+                <form action="update.html" method="GET"></form>
+                    <div class="new-setpoint">
+                        <label for="front-hall-porch-new-setpoint>Enter new setpoint: </label>
+                        <input id="front-hall-porch-new-setpoint" type="range" min="5" max="21" step=".5" name="front-hall-porch-new-setpoint"/>
+                    </div>
+                </form>
             </div>
             <div id="rear-hall" class="area">
                 <h2>Rear Hall</h2>
@@ -61,6 +79,13 @@
                     <div class="setpoint-text"><p>Current Setpoint</p></div>
                     <div class="setpoint-value"><p>20°C</p></div>
                 </div>
+                <hr>
+                <form action="update.html" method="GET"></form>
+                    <div class="new-setpoint">
+                        <label for="rear-hall-new-setpoint">Enter new setpoint: </label>
+                        <input id="rear-hall-new-setpoint" type="range" min="5" max="21" step=".5" name="rear-hall-new-setpoint"/>
+                    </div>
+                </form>
             </div>
             <div id="living-room" class="area">
                 <h2>Living Room</h2>
@@ -75,6 +100,13 @@
                     <div class="setpoint-text"><p>Current Setpoint</p></div>
                     <div class="setpoint-value"><p>20°C</p></div>
                 </div>
+                <hr>
+                <form action="update.html" method="GET"></form>
+                    <div class="new-setpoint">
+                        <label for="living-room-new-setpoint">Enter new setpoint: </label>
+                        <input id="living-room-new-setpoint" type="range" min="5" max="21" step=".5" name="living-room-new-setpoint"/>
+                    </div>
+                </form>
             </div>
             <div id="play-room" class="area">
                 <h2>Play Room</h2>
@@ -89,6 +121,13 @@
                     <div class="setpoint-text"><p>Current Setpoint</p></div>
                     <div class="setpoint-value"><p>20°C</p></div>
                 </div>
+                <hr>
+                <form action="update.html" method="GET"></form>
+                    <div class="new-setpoint">
+                        <label for="play-room-new-setpoint">Enter new setpoint: </label>
+                        <input id="play-room-new-setpoint" type="range" min="5" max="21" step=".5" name="play-room-new-setpoint"/>
+                    </div>
+                </form>
             </div>
             <div id="dining-room" class="area">
                 <h2>Dining Room</h2>
@@ -103,6 +142,13 @@
                     <div class="setpoint-text"><p>Current Setpoint</p></div>
                     <div class="setpoint-value"><p>20°C</p></div>
                 </div>
+                <hr>
+                <form action="update.html" method="GET"></form>
+                    <div class="new-setpoint">
+                        <label for="dining-room-new-setpoint">Enter new setpoint: </label>
+                        <input id="dining-room-new-setpoint" type="range" min="5" max="21" step=".5" name="dining-room-new-setpoint"/>
+                    </div>
+                </form>
             </div>
         </main>
     </body>
